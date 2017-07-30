@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Find My Show</string>
     <string name="search_hint">What do you want to watch?</string>
+    <string name="playing_on">Your Show is Available On:</string>
+    <string name="netflix"> Netflix</string>
+    <string name="hulu">Hulu</string>
+    <string name="amazon_video">Amazon Video</string>
+    <string name="sling_tv">Sling TV</string>
 </resources>

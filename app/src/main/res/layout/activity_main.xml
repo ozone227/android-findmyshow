@@ -5,41 +5,134 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="drbond.findmyshow.MainActivity">
-<GridLayout
-    android:layout_width="0dp"
-    android:layout_height="0dp"
-    android:columnCount="2"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintHorizontal_bias="0.0"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.0">
-    <TextView
+
+    <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
+        android:layout_height="match_parent"
+        android:background="#3E3E3E"
+        android:columnCount="4"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-   <EditText
-       android:layout_height="wrap_content"
-       android:layout_width="match_parent"
-       android:layout_column="0"
-       android:layout_columnSpan="2"
-       android:padding="12dp"
-       android:elevation="4dp"
-       android:hint="@string/search_hint"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintLeft_toLeftOf="parent"
-       app:layout_constraintRight_toRightOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       />
-    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginBottom="2dp">
 
-        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="#eead45"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-</GridLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:elevation="4dp"
+            android:hint="@string/search_hint"
+            android:padding="12dp"
+            android:textColor="#FDFFDB"
+            android:textColorHint="#FDFFDB"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:elevation="4dp"
+            android:padding="12dp"
+            android:src="@drawable/luke_cage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/playing_on"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#eead45"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal"
+        android:elevation="4dp"
+        android:padding="1dp"
+        android:text="@string/netflix"
+        android:textStyle="bold"
+        android:textColor="#3cff00"
+        android:textAlignment="gravity"
+        android:buttonTint="#3cff00"
+            android:checked="true"
+         />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal"
+        android:layout_columnWeight="1"
+        android:elevation="4dp"
+        android:padding="1dp"
+        android:text="@string/hulu"
+        android:textStyle="bold"
+        android:textColor="#3cff00"
+        android:textAlignment="center"
+        android:buttonTint="#3cff00"
+        android:checked="true"
+   />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal"
+        android:elevation="4dp"
+        android:padding="2dp"
+        android:text="@string/sling_tv"
+        android:textStyle="bold"
+        android:textColor="#FFFF0011"
+        android:textAlignment="center"
+        android:buttonTint="#ff0011"
+        android:checked="false" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal"
+        android:elevation="4dp"
+        android:padding="2dp"
+        android:text="@string/amazon_video"
+        android:textStyle="bold"
+        android:textColor="#3cff00"
+        android:textAlignment="center"
+        android:buttonTint="#3cff00"
+        android:checked="true" />
+    </GridLayout>
 
 </android.support.constraint.ConstraintLayout>
