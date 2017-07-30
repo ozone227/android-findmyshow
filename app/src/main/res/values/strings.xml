@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Find My Show</string>
+    <string name="search_hint">What do you want to watch?</string>
+</resources>
